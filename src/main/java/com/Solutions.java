@@ -6,12 +6,131 @@ package com;
 
 public class Solutions implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Solutions() {
-    }
+	private java.lang.String solution_id;
+	private java.lang.String checkresolveflag;
+	private java.lang.Boolean allowresolve;
+	private java.lang.String recommendation_message;
+	private java.lang.String solution_seq_no;
+	private java.lang.String application_name;
+	private java.lang.String application_url;
+	private java.lang.String param4;
+	private java.lang.String output;
+	private com.InputParams input_params;
+	private java.lang.String webservice_url;
 
+	public Solutions() {
+	}
 
+	public java.lang.String getSolution_id() {
+		return this.solution_id;
+	}
 
+	public void setSolution_id(java.lang.String solution_id) {
+		this.solution_id = solution_id;
+	}
+
+	public java.lang.String getCheckresolveflag() {
+		return this.checkresolveflag;
+	}
+
+	public void setCheckresolveflag(java.lang.String checkresolveflag) {
+		this.checkresolveflag = checkresolveflag;
+	}
+
+	public java.lang.Boolean getAllowresolve() {
+		return this.allowresolve;
+	}
+
+	public void setAllowresolve(java.lang.Boolean allowresolve) {
+		this.allowresolve = allowresolve;
+	}
+
+	public java.lang.String getRecommendation_message() {
+		return this.recommendation_message;
+	}
+
+	public void setRecommendation_message(
+			java.lang.String recommendation_message) {
+		this.recommendation_message = recommendation_message;
+	}
+
+	public java.lang.String getSolution_seq_no() {
+		return this.solution_seq_no;
+	}
+
+	public void setSolution_seq_no(java.lang.String solution_seq_no) {
+		this.solution_seq_no = solution_seq_no;
+	}
+
+	public java.lang.String getApplication_name() {
+		return this.application_name;
+	}
+
+	public void setApplication_name(java.lang.String application_name) {
+		this.application_name = application_name;
+	}
+
+	public java.lang.String getApplication_url() {
+		return this.application_url;
+	}
+
+	public void setApplication_url(java.lang.String application_url) {
+		this.application_url = application_url;
+	}
+
+	public java.lang.String getParam4() {
+		return this.param4;
+	}
+
+	public void setParam4(java.lang.String param4) {
+		this.param4 = param4;
+	}
+
+	public java.lang.String getOutput() {
+		return this.output;
+	}
+
+	public void setOutput(java.lang.String output) {
+		this.output = output;
+	}
+
+	public com.InputParams getInput_params() {
+		return this.input_params;
+	}
+
+	public void setInput_params(com.InputParams input_params) {
+		this.input_params = input_params;
+	}
+
+	public java.lang.String getWebservice_url() {
+		return this.webservice_url;
+	}
+
+	public void setWebservice_url(java.lang.String webservice_url) {
+		this.webservice_url = webservice_url;
+	}
+
+	public Solutions(java.lang.String solution_id,
+			java.lang.String checkresolveflag, java.lang.Boolean allowresolve,
+			java.lang.String recommendation_message,
+			java.lang.String solution_seq_no,
+			java.lang.String application_name,
+			java.lang.String application_url, java.lang.String param4,
+			java.lang.String output, com.InputParams input_params,
+			java.lang.String webservice_url) {
+		this.solution_id = solution_id;
+		this.checkresolveflag = checkresolveflag;
+		this.allowresolve = allowresolve;
+		this.recommendation_message = recommendation_message;
+		this.solution_seq_no = solution_seq_no;
+		this.application_name = application_name;
+		this.application_url = application_url;
+		this.param4 = param4;
+		this.output = output;
+		this.input_params = input_params;
+		this.webservice_url = webservice_url;
+	}
 
 }
