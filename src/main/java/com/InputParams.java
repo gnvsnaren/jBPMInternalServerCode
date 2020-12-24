@@ -6,12 +6,75 @@ package com;
 
 public class InputParams implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public InputParams() {
-    }
+	private java.lang.String host_name;
+	private java.lang.String ip_address;
+	private java.lang.String process_name;
+	private java.lang.String port;
+	private java.lang.String service_name;
+	private java.lang.String param1;
 
+	public InputParams() {
+	}
 
+	public java.lang.String getHost_name() {
+		return this.host_name;
+	}
 
+	public void setHost_name(java.lang.String host_name) {
+		this.host_name = host_name;
+	}
+
+	public java.lang.String getIp_address() {
+		return this.ip_address;
+	}
+
+	public void setIp_address(java.lang.String ip_address) {
+		this.ip_address = ip_address;
+	}
+
+	public java.lang.String getProcess_name() {
+		return this.process_name;
+	}
+
+	public void setProcess_name(java.lang.String process_name) {
+		this.process_name = process_name;
+	}
+
+	public java.lang.String getPort() {
+		return this.port;
+	}
+
+	public void setPort(java.lang.String port) {
+		this.port = port;
+	}
+
+	public java.lang.String getService_name() {
+		return this.service_name;
+	}
+
+	public void setService_name(java.lang.String service_name) {
+		this.service_name = service_name;
+	}
+
+	public java.lang.String getParam1() {
+		return this.param1;
+	}
+
+	public void setParam1(java.lang.String param1) {
+		this.param1 = param1;
+	}
+
+	public InputParams(java.lang.String host_name, java.lang.String ip_address,
+			java.lang.String process_name, java.lang.String port,
+			java.lang.String service_name, java.lang.String param1) {
+		this.host_name = host_name;
+		this.ip_address = ip_address;
+		this.process_name = process_name;
+		this.port = port;
+		this.service_name = service_name;
+		this.param1 = param1;
+	}
 
 }
