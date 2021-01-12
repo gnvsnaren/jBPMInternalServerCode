@@ -17,7 +17,7 @@ public class Solutions implements java.io.Serializable {
 	private java.lang.String application_url;
 	private java.lang.String param4;
 	private java.lang.String output;
-	private com.InputParams input_params;
+	private com.InputParams inputparams;
 	private java.lang.String webservice_url;
 
 	public Solutions() {
@@ -96,12 +96,12 @@ public class Solutions implements java.io.Serializable {
 		this.output = output;
 	}
 
-	public com.InputParams getInput_params() {
-		return this.input_params;
+	public com.InputParams getInputparams() {
+		return this.inputparams;
 	}
 
-	public void setInput_params(com.InputParams input_params) {
-		this.input_params = input_params;
+	public void setInputparams(com.InputParams inputparams) {
+		this.inputparams = inputparams;
 	}
 
 	public java.lang.String getWebservice_url() {
@@ -118,7 +118,7 @@ public class Solutions implements java.io.Serializable {
 			java.lang.String solution_seq_no,
 			java.lang.String application_name,
 			java.lang.String application_url, java.lang.String param4,
-			java.lang.String output, com.InputParams input_params,
+			java.lang.String output, com.InputParams inputparams,
 			java.lang.String webservice_url) {
 		this.solution_id = solution_id;
 		this.checkresolveflag = checkresolveflag;
@@ -129,7 +129,7 @@ public class Solutions implements java.io.Serializable {
 		this.application_url = application_url;
 		this.param4 = param4;
 		this.output = output;
-		this.input_params = input_params;
+		this.inputparams = inputparams;
 		this.webservice_url = webservice_url;
 	}
 
