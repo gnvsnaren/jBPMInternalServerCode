@@ -12,6 +12,10 @@ public class Incident implements java.io.Serializable {
 	private java.lang.String number;
 	private java.util.List<com.Solutions> solutions;
 
+	private java.lang.String description;
+
+	private java.lang.String short_description;
+
 	public Incident() {
 	}
 
@@ -39,11 +43,30 @@ public class Incident implements java.io.Serializable {
 		this.solutions = solutions;
 	}
 
+	public java.lang.String getDescription() {
+		return this.description;
+	}
+
+	public void setDescription(java.lang.String description) {
+		this.description = description;
+	}
+
+	public java.lang.String getShort_description() {
+		return this.short_description;
+	}
+
+	public void setShort_description(java.lang.String short_description) {
+		this.short_description = short_description;
+	}
+
 	public Incident(java.lang.String sys_id, java.lang.String number,
-			java.util.List<com.Solutions> solutions) {
+			java.util.List<com.Solutions> solutions,
+			java.lang.String description, java.lang.String short_description) {
 		this.sys_id = sys_id;
 		this.number = number;
 		this.solutions = solutions;
+		this.description = description;
+		this.short_description = short_description;
 	}
 
 }
