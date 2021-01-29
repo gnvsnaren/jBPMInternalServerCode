@@ -15,6 +15,18 @@ public class InputParams implements java.io.Serializable {
 	private java.lang.String service_name;
 	private java.lang.String param1;
 
+	private java.lang.String SID;
+
+	private java.lang.String client_Number;
+
+	private java.lang.String param2;
+
+	private java.lang.String param3;
+
+	private java.lang.String param4;
+
+	private java.lang.String param5;
+
 	public InputParams() {
 	}
 
@@ -66,15 +78,72 @@ public class InputParams implements java.io.Serializable {
 		this.param1 = param1;
 	}
 
+	public java.lang.String getSID() {
+		return this.SID;
+	}
+
+	public void setSID(java.lang.String SID) {
+		this.SID = SID;
+	}
+
+	public java.lang.String getClient_Number() {
+		return this.client_Number;
+	}
+
+	public void setClient_Number(java.lang.String client_Number) {
+		this.client_Number = client_Number;
+	}
+
+	public java.lang.String getParam2() {
+		return this.param2;
+	}
+
+	public void setParam2(java.lang.String param2) {
+		this.param2 = param2;
+	}
+
+	public java.lang.String getParam3() {
+		return this.param3;
+	}
+
+	public void setParam3(java.lang.String param3) {
+		this.param3 = param3;
+	}
+
+	public java.lang.String getParam4() {
+		return this.param4;
+	}
+
+	public void setParam4(java.lang.String param4) {
+		this.param4 = param4;
+	}
+
+	public java.lang.String getParam5() {
+		return this.param5;
+	}
+
+	public void setParam5(java.lang.String param5) {
+		this.param5 = param5;
+	}
+
 	public InputParams(java.lang.String host_name, java.lang.String ip_address,
 			java.lang.String process_name, java.lang.String port,
-			java.lang.String service_name, java.lang.String param1) {
+			java.lang.String service_name, java.lang.String param1,
+			java.lang.String SID, java.lang.String client_Number,
+			java.lang.String param2, java.lang.String param3,
+			java.lang.String param4, java.lang.String param5) {
 		this.host_name = host_name;
 		this.ip_address = ip_address;
 		this.process_name = process_name;
 		this.port = port;
 		this.service_name = service_name;
 		this.param1 = param1;
+		this.SID = SID;
+		this.client_Number = client_Number;
+		this.param2 = param2;
+		this.param3 = param3;
+		this.param4 = param4;
+		this.param5 = param5;
 	}
 
 }
