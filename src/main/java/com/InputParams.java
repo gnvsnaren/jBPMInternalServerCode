@@ -6,12 +6,45 @@ package com;
 
 public class InputParams implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public InputParams() {
-    }
+	private java.lang.String SID;
+	private java.lang.String client_Number;
 
+	private java.lang.String param1;
 
+	public InputParams() {
+	}
 
+	public java.lang.String getSID() {
+		return this.SID;
+	}
+
+	public void setSID(java.lang.String SID) {
+		this.SID = SID;
+	}
+
+	public java.lang.String getClient_Number() {
+		return this.client_Number;
+	}
+
+	public void setClient_Number(java.lang.String client_Number) {
+		this.client_Number = client_Number;
+	}
+
+	public java.lang.String getParam1() {
+		return this.param1;
+	}
+
+	public void setParam1(java.lang.String param1) {
+		this.param1 = param1;
+	}
+
+	public InputParams(java.lang.String SID, java.lang.String client_Number,
+			java.lang.String param1) {
+		this.SID = SID;
+		this.client_Number = client_Number;
+		this.param1 = param1;
+	}
 
 }
