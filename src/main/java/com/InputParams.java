@@ -12,8 +12,6 @@ public class InputParams implements java.io.Serializable {
 
 	private java.lang.String SID;
 
-	private java.lang.String client_Number;
-
 	private java.lang.String param2;
 
 	private java.lang.String param3;
@@ -21,6 +19,8 @@ public class InputParams implements java.io.Serializable {
 	private java.lang.String param4;
 
 	private java.lang.String param5;
+
+	private java.lang.String client_Number;
 
 	public InputParams() {
 	}
@@ -39,14 +39,6 @@ public class InputParams implements java.io.Serializable {
 
 	public void setSID(java.lang.String SID) {
 		this.SID = SID;
-	}
-
-	public java.lang.String getClient_Number() {
-		return this.client_Number;
-	}
-
-	public void setClient_Number(java.lang.String client_Number) {
-		this.client_Number = client_Number;
 	}
 
 	public java.lang.String getParam2() {
