@@ -73,6 +73,14 @@ public class InputParams implements java.io.Serializable {
 		this.param5 = param5;
 	}
 
+	public java.lang.String getClient_Number() {
+		return this.client_Number;
+	}
+
+	public void setClient_Number(java.lang.String client_Number) {
+		this.client_Number = client_Number;
+	}
+
 	public InputParams(java.lang.String param1, java.lang.String SID,
 			java.lang.String client_Number, java.lang.String param2,
 			java.lang.String param3, java.lang.String param4,
