@@ -1,18 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:drools="http://www.jboss.org/drools" id="_tMXxgIxsEeugjqL_iTtjig" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
-  <bpmn2:process id="CIAP_SapOps.TestSubProcess-2" drools:packageName="org.jbpm" drools:version="1.0" drools:adHoc="false" name="TestSubProcess-2" isExecutable="true" processType="Public"/>
-  <bpmndi:BPMNDiagram id="_tMXxgYxsEeugjqL_iTtjig">
-    <bpmndi:BPMNPlane id="_tMXxgoxsEeugjqL_iTtjig" bpmnElement="CIAP_SapOps.TestSubProcess-2"/>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_0vtVMIxuEeugjqL_iTtjig" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+  <bpmn2:itemDefinition id="_inputItem" structureRef="com.Solutions"/>
+  <bpmn2:process id="CIAP_SapOps.TestSubProcess-2" drools:packageName="org.jbpm" drools:version="1.0" drools:adHoc="false" name="TestSubProcess-2" isExecutable="true" processType="Public">
+    <bpmn2:property id="input" itemSubjectRef="_inputItem" name="input"/>
+    <bpmn2:sequenceFlow id="_A134DD40-D558-4EDA-861D-4741AA55BF13" sourceRef="_EA4F43ED-01FA-4BE1-8D48-7B523F27FA44" targetRef="_5923F918-99B8-4BB9-8524-B09B0C1F95DA">
+      <bpmn2:extensionElements>
+        <drools:metaData name="isAutoConnection.source">
+          <drools:metaValue><![CDATA[true]]></drools:metaValue>
+        </drools:metaData>
+        <drools:metaData name="isAutoConnection.target">
+          <drools:metaValue><![CDATA[true]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="_7B42B697-8F08-478D-BDE8-55F621F2142B" sourceRef="_5923F918-99B8-4BB9-8524-B09B0C1F95DA" targetRef="_DC3B4F43-C6E1-4193-9766-BE49552848AA">
+      <bpmn2:extensionElements>
+        <drools:metaData name="isAutoConnection.source">
+          <drools:metaValue><![CDATA[true]]></drools:metaValue>
+        </drools:metaData>
+        <drools:metaData name="isAutoConnection.target">
+          <drools:metaValue><![CDATA[true]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
+    <bpmn2:scriptTask id="_5923F918-99B8-4BB9-8524-B09B0C1F95DA" name="Task" scriptFormat="http://www.java.com/java">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Task]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>_A134DD40-D558-4EDA-861D-4741AA55BF13</bpmn2:incoming>
+      <bpmn2:outgoing>_7B42B697-8F08-478D-BDE8-55F621F2142B</bpmn2:outgoing>
+      <bpmn2:script><![CDATA[System.out.println("Inside Sub Process 2: " + input);]]></bpmn2:script>
+    </bpmn2:scriptTask>
+    <bpmn2:startEvent id="_EA4F43ED-01FA-4BE1-8D48-7B523F27FA44">
+      <bpmn2:outgoing>_A134DD40-D558-4EDA-861D-4741AA55BF13</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:endEvent id="_DC3B4F43-C6E1-4193-9766-BE49552848AA">
+      <bpmn2:incoming>_7B42B697-8F08-478D-BDE8-55F621F2142B</bpmn2:incoming>
+    </bpmn2:endEvent>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="_0vtVMYxuEeugjqL_iTtjig">
+    <bpmndi:BPMNPlane id="_0vtVMoxuEeugjqL_iTtjig" bpmnElement="CIAP_SapOps.TestSubProcess-2">
+      <bpmndi:BPMNShape id="shape__DC3B4F43-C6E1-4193-9766-BE49552848AA" bpmnElement="_DC3B4F43-C6E1-4193-9766-BE49552848AA">
+        <dc:Bounds height="56.0" width="56.0" x="533.0" y="169.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__EA4F43ED-01FA-4BE1-8D48-7B523F27FA44" bpmnElement="_EA4F43ED-01FA-4BE1-8D48-7B523F27FA44">
+        <dc:Bounds height="56.0" width="56.0" x="163.0" y="169.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__5923F918-99B8-4BB9-8524-B09B0C1F95DA" bpmnElement="_5923F918-99B8-4BB9-8524-B09B0C1F95DA">
+        <dc:Bounds height="102.0" width="154.0" x="299.0" y="146.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="edge_shape__5923F918-99B8-4BB9-8524-B09B0C1F95DA_to_shape__DC3B4F43-C6E1-4193-9766-BE49552848AA" bpmnElement="_7B42B697-8F08-478D-BDE8-55F621F2142B">
+        <di:waypoint xsi:type="dc:Point" x="453.0" y="197.0"/>
+        <di:waypoint xsi:type="dc:Point" x="533.0" y="197.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__EA4F43ED-01FA-4BE1-8D48-7B523F27FA44_to_shape__5923F918-99B8-4BB9-8524-B09B0C1F95DA" bpmnElement="_A134DD40-D558-4EDA-861D-4741AA55BF13">
+        <di:waypoint xsi:type="dc:Point" x="219.0" y="197.0"/>
+        <di:waypoint xsi:type="dc:Point" x="299.0" y="197.0"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
-  <bpmn2:relationship id="_tMXxg4xsEeugjqL_iTtjig" type="BPSimData">
+  <bpmn2:relationship id="_0vtVM4xuEeugjqL_iTtjig" type="BPSimData">
     <bpmn2:extensionElements>
       <bpsim:BPSimData>
         <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
           <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters"/>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_EA4F43ED-01FA-4BE1-8D48-7B523F27FA44" id="_0vtVNIxuEeugjqL_iTtjig">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_5923F918-99B8-4BB9-8524-B09B0C1F95DA" id="_0vtVNYxuEeugjqL_iTtjig">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
+              <bpsim:Availability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_tMXxgIxsEeugjqL_iTtjig</bpmn2:source>
-    <bpmn2:target>_tMXxgIxsEeugjqL_iTtjig</bpmn2:target>
+    <bpmn2:source>_0vtVMIxuEeugjqL_iTtjig</bpmn2:source>
+    <bpmn2:target>_0vtVMIxuEeugjqL_iTtjig</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
