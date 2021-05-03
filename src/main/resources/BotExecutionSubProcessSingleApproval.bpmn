@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_rt9DcKvAEeuCkaWMrBermw" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_s-O_kKvAEeuCkaWMrBermw" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
   <bpmn2:itemDefinition id="_inputPayloadItem" structureRef="com.Incident"/>
   <bpmn2:process id="CIAP_SapOps.BotExecutionSubProcessSingleApproval" drools:packageName="org.jbpm" drools:version="1.0" drools:adHoc="false" name="BotExecutionSubProcessSingleApproval" isExecutable="true" processType="Public">
     <bpmn2:property id="inputPayload" itemSubjectRef="_inputPayloadItem" name="inputPayload"/>
@@ -23,7 +23,7 @@
         </drools:metaData>
       </bpmn2:extensionElements>
     </bpmn2:sequenceFlow>
-    <bpmn2:task id="_BB182DF3-1564-4E37-B72E-671B3943921D" name="Assign Flag Task">
+    <bpmn2:scriptTask id="_BB182DF3-1564-4E37-B72E-671B3943921D" name="Assign Flag Task" scriptFormat="http://www.java.com/java">
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
           <drools:metaValue><![CDATA[Assign Flag Task]]></drools:metaValue>
@@ -31,7 +31,7 @@
       </bpmn2:extensionElements>
       <bpmn2:incoming>_EF15F926-CC66-4275-A391-30CD0B790FEA</bpmn2:incoming>
       <bpmn2:outgoing>_FC98F46C-13BA-4FF2-8F1A-35D806F40C52</bpmn2:outgoing>
-    </bpmn2:task>
+    </bpmn2:scriptTask>
     <bpmn2:startEvent id="_2D66F326-B80A-498E-BF81-5EBC708DFF66">
       <bpmn2:outgoing>_EF15F926-CC66-4275-A391-30CD0B790FEA</bpmn2:outgoing>
     </bpmn2:startEvent>
@@ -39,8 +39,8 @@
       <bpmn2:incoming>_FC98F46C-13BA-4FF2-8F1A-35D806F40C52</bpmn2:incoming>
     </bpmn2:endEvent>
   </bpmn2:process>
-  <bpmndi:BPMNDiagram id="_rt9DcavAEeuCkaWMrBermw">
-    <bpmndi:BPMNPlane id="_rt9DcqvAEeuCkaWMrBermw" bpmnElement="CIAP_SapOps.BotExecutionSubProcessSingleApproval">
+  <bpmndi:BPMNDiagram id="_s-O_kavAEeuCkaWMrBermw">
+    <bpmndi:BPMNPlane id="_s-O_kqvAEeuCkaWMrBermw" bpmnElement="CIAP_SapOps.BotExecutionSubProcessSingleApproval">
       <bpmndi:BPMNShape id="shape__7AA88597-F47C-4340-9320-58370AC7712F" bpmnElement="_7AA88597-F47C-4340-9320-58370AC7712F">
         <dc:Bounds height="56.0" width="56.0" x="497.0" y="181.5"/>
       </bpmndi:BPMNShape>
@@ -60,19 +60,19 @@
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
-  <bpmn2:relationship id="_rt9Dc6vAEeuCkaWMrBermw" type="BPSimData">
+  <bpmn2:relationship id="_s-O_k6vAEeuCkaWMrBermw" type="BPSimData">
     <bpmn2:extensionElements>
       <bpsim:BPSimData>
         <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
           <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters"/>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_2D66F326-B80A-498E-BF81-5EBC708DFF66" id="_rt9DdKvAEeuCkaWMrBermw">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_2D66F326-B80A-498E-BF81-5EBC708DFF66" id="_s-O_lKvAEeuCkaWMrBermw">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
               </bpsim:ProcessingTime>
             </bpsim:TimeParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_BB182DF3-1564-4E37-B72E-671B3943921D" id="_rt9DdavAEeuCkaWMrBermw">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_BB182DF3-1564-4E37-B72E-671B3943921D" id="_s-O_lavAEeuCkaWMrBermw">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -95,7 +95,7 @@
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_rt9DcKvAEeuCkaWMrBermw</bpmn2:source>
-    <bpmn2:target>_rt9DcKvAEeuCkaWMrBermw</bpmn2:target>
+    <bpmn2:source>_s-O_kKvAEeuCkaWMrBermw</bpmn2:source>
+    <bpmn2:target>_s-O_kKvAEeuCkaWMrBermw</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
